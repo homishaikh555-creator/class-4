@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Box Model Assignment</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>CSS Box Model</h1>
+    <p>Content, Padding, Border and Margin</p>
+  </header>
+
+  <main>
+    <section class="intro">
+      <h2>What is the Box Model?</h2>
+      <p>Every HTML element is a rectangular box made up of content, padding, border and margin. The examples below show how changing padding, border, width and height affects the size of a box.</p>
+    </section>
+
+    <section>
+      <h2>1. Different Width Values</h2>
+      <p class="note">Boxes A and B use a 200px content width. Box C uses a 200px total width with border-box.</p>
+      <div class="examples">
+        <article class="box width-a">
+          <h3>Box A</h3><p>Content width: 200px</p><p>Padding: 10px</p><p>Border: 2px</p>
+        </article>
+        <article class="box width-b">
+          <h3>Box B</h3><p>Content width: 200px</p><p>Padding: 25px</p><p>Border: 5px</p>
+        </article>
+        <article class="box width-c">
+          <h3>Box C</h3><p>Total width: 200px</p><p>Padding: 25px</p><p>Border: 5px</p><p>border-box</p>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <h2>2. Different Height Values</h2>
+      <p class="note">Boxes A and B use a 100px content height. Box C uses a total height of 160px with border-box.</p>
+      <div class="examples height-examples">
+        <article class="box height-a">
+          <h3>Height A</h3><p>Content height: 100px</p><p>Padding: 10px</p><p>Border: 2px</p>
+        </article>
+        <article class="box height-b">
+          <h3>Height B</h3><p>Content height: 100px</p><p>Padding: 25px</p><p>Border: 5px</p>
+        </article>
+        <article class="box height-c">
+          <h3>Height C</h3><p>Total height: 160px</p><p>Padding: 25px</p><p>Border: 5px</p><p>border-box</p>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <h2>3. Four Parts of the Box Model</h2>
+      <div class="margin-demo">
+        <div class="border-demo">
+          <div class="padding-demo">
+            <div class="content-demo">CONTENT</div>
+          </div>
+        </div>
+      </div>
+      <p class="legend">Outer area = Margin | Orange = Border | Yellow = Padding | Green = Content</p>
+    </section>
+
+    <section class="conclusion">
+      <h2>Conclusion</h2>
+      <p><strong>content-box:</strong> The declared width and height apply to the content only. Padding and border are added outside those dimensions.</p>
+      <p><strong>border-box:</strong> The declared width and height include the content, padding and border. This makes element sizing easier to control.</p>
+    </section>
+  </main>
+  <footer>CSS Box Model Practical Assignment</footer>
+</body>
+</html>
